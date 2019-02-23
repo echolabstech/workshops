@@ -28,6 +28,6 @@ def multiply():
 
 def divide():
 	"""
-	implement using BDD
+	implement using TDD
 	"""
 	pass	

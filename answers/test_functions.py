@@ -8,6 +8,12 @@ class TestsAdd(TestCase):
 		pass
 
 	@mock('builtins.input')
+	def test_add_returns_a_number(self, mock_input):
+		mock_input.return_value = '1'
+		result = add()
+		self.assertEqual(type(result), int)
+
+	@mock('builtins.input')
 	def test_add_returns_a_sum(self, mock_input):
 		mock_input.return_value = '1'
 		result = add()
