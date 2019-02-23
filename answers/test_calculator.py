@@ -18,3 +18,4 @@ class TestsApp(TestCase):
 		self.assertFalse(mock_input.called)
 		self.assertTrue(mock_run.called)
 		self.assertEqual(mock_run.call_args[0], ('a', '5', '3'))
+		## BONUS assert that mock_add is being called with specific arguments

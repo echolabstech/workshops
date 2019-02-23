@@ -7,6 +7,7 @@ class TestsAdd(TestCase):
 	def setUp(self):
 		pass
 
+	## don't for get to mock builtins.input
 	def test_add_returns_a_number(self):
 		pass
 

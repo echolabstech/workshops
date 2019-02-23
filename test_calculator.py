@@ -11,3 +11,6 @@ class TestsApp(TestCase):
 
 	def test_some_workflow_integration_test(self):
 		pass
+		## assert that all functions in the workflow
+		## are called and passed expected arguments
+		## BONUS check their return results
