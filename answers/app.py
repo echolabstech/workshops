@@ -1,7 +1,14 @@
 from calculator import Calculator
 
-if __name__ == "__main__":
-	calc = Calculator()
-	calc.run()
-else:
-	print('No imports. Run this as a python script.')
+calc = Calculator()
+
+def some_workflow():
+	print('operations are: a(add), s(subtract), m(multiply), d(divide)')
+	result = calc.run('a', '5', '3')
+	print('the result is:' + str(result))
+	return result
+
+def other_work():
+	pass
+
+result = some_workflow()
