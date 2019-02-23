@@ -1,10 +1,16 @@
+import re
+
 def add():
 	print('type a number')
-	left = int(input())
+	left = input()
+	if not re.match('\d+', left):
+		raise TypeError('expected a digit')
 
 	print('type another number')
-	right = int(input())
-	return left + right
+	right = input()
+	if not re.match('\d+', right):
+		raise TypeError('expected a digit')
+	return int(left) + int(right)
 
 def subtract():
 	print('type a number')
@@ -12,8 +18,7 @@ def subtract():
 
 	print('type another number')
 	right = int(input())
-	result = left - right
-	print('the result is:' + str(result))
+	return left - right
 
 def multiply():
 	"""
